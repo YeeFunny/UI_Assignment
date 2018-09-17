@@ -1,0 +1,160 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+body{
+  font: normal .80em 'trebuchet ms', arial, sans-serif;
+  color: #000;
+}
+
+#header{
+  width: 950px;
+  height: 170px;
+  margin: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner.jpg");
+}
+
+#logo {
+  width: 950px;
+  height: 125px;
+}
+
+#logo h1{
+  padding: 35px 0 0 60px;
+  font-style: normal;
+  font-size: 300%;
+  color: #FFF;
+  letter-spacing: 0.1em;
+}
+
+#main{
+  width:950px;
+  margin:auto;
+}
+
+#menu{
+  width:950px;
+  height:46px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu ul{
+  float: right;
+  margin: 0px;
+  list-style:none;
+}
+
+#menu ul li {
+  float:left;
+  width: 100px;
+  padding:10px;
+  color: #ffffff;
+  text-align: center;
+  border-left: #ffffff solid 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+#main{
+  width: 950px;
+  overflow: hidden;
+  margin: 20px auto 20px auto;
+  padding: 0 0 10px 0;
+}
+
+#sidebar_container{
+  float: right;
+  width: 250px;
+}
+
+.sidebar{
+  float: right;
+  width: 230px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: #888888 solid 1px;
+}
+
+.sidebar_item{
+  padding: 0 15px;
+  width: 192px;
+}
+
+.sidebar h3{
+  font-size: 140%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar h4{
+  font-size: 120%;
+}
+
+.sidebar h5{
+  font-size: 100%;
+  color: #888888;
+}
+
+.sidebar p{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.sidebar p span{
+  display: block;
+  margin-top: 5px;
+}
+
+.sidebar ul{
+  padding-bottom: 10px;
+  list-style-position: inside;
+}
+
+#content{
+  text-align: left;
+  width: 650px;
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px
+}
+
+#content h2{
+  font-size: 160%;
+  margin: 0 0 15px 0;
+  padding: 10px 0 5px 0;
+}
+
+#content p{
+  padding: 0 0 15px 0;
+  line-height: 1.5em;
+}
+
+#content ul{
+  line-height: 1.5em;
+  margin: 2px 0 15px 0px;
+  list-style-position: inside;
+}
+
+#footer{
+  width: 950px;
+  height: 80px;
+  margin: auto;
+  font-family: 'trebuchet ms', sans-serif;
+  font-size: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner.jpg) no-repeat;
+  text-align: center;
+  padding: 28px 0 5px 0;
+  color: #FFF;
+}
+
+#footer a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#footer p{
+  line-height: 1.5em;
+  margin-top: 10px;
+}

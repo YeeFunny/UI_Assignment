@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+      body {
+        background-color: #222222;
+      }
+      header {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        border-top: #ffffff solid 1px;
+      }
+      header div:first-child {
+        flex-grow: 5;
+      }
+      header ul{
+        list-style: none;
+        margin-top: 1.25em;
+      }
+      header ul li{
+        float: left;
+        flex-grow: 1;
+        width: 100px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header ul li a:link{
+        color: white;
+      }
+      hearder ul li a:visited{
+        color: white;
+      }
+      header ul li a:hover{
+        color: lightgray;
+      }
+      header ul li a:active{
+        color: white;
+      }
+      header div:nth-child(2) {
+        flex-grow: 2;
+      }
+      img#logo{
+        margin-left: 10px;
+        margin-top: 1.25em;
+      }
+      img#magnify{
+        margin-top: 1.5em;
+        margin-right: 10px;
+      }
+      input#search{
+        margin-top: 10px;
+      }
+      .container{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 50px;
+      }
+      .container h1{
+        color: lightgray;
+      }
+      .container p{
+        color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="child">
+        <img src="images/logo.png" id="logo"/>
+      </div>
+
+      <ul class="child">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="child">
+        <img src="images/magnify.png" id="magnify" />
+        <input type="text" name="search" id="search">
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Flexawesome</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

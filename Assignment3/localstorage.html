@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin:0px;
+      padding:0px;
+    }
+
+    body{
+      font: normal .80em 'trebuchet ms', arial, sans-serif;
+      color: #000;
+    }
+
+    #main{
+      text-align: center;
+    }
+
+    #main h1{
+      margin-top: 20px;
+    }
+
+    #main input{
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <h1>Site Registration</h1>
+    <input type="text" name="site" value="site name"><br>
+    <input type="url" name="address" value="www.da.com"><br>
+    <input type="button" name="submit" value="submit" onclick="register();">
+    <input type="button" name="reset" value="reset" onclick="reset();">
+  </div>
+  <script>
+    function register() {
+      let arr = [];
+      let temp = localStorage.getItem("site");
+      let site = document.getElementsByName("site")[0].value;
+      let address = document.getElementsByName("address")[0].value;
+      let item = new Object();
+      item.site = site;
+      item.address = address;
+      if (temp !== null) {
+        arr = JSON.parse(temp);
+      }
+      arr.push(item);
+      localStorage.setItem("site", JSON.stringify(arr));
+    }
+    function reset() {
+      localStorage.clear();
+    }
+  </script>
+</body>
+</html>
